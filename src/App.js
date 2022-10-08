@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        Weather Project React
         <Weather />
         <footer>
           This project is coded by Kateryna Kravchuk by guidance of Matt Delac.
