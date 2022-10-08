@@ -4,7 +4,6 @@
   border: 1px solid #a78b71;
   border-radius: 10px;
   padding: 16px;
-  max-width: 600px;
 }
 
 .Weather form {
@@ -27,4 +26,17 @@
   font-weight: 100;
   line-height: 19px;
   list-style: none;
+}
+.Weather .temperature {
+  font-weight: bold;
+  font-size: 48px;
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  line-height: 64px;
+}
+
+.Weather img {
+  height: 64px;
+  margin-right: 10px;
+  display: inline-block;
 }
