@@ -13,9 +13,8 @@ function App() {
           <a href="https://github.com/kate-kravchuk/weather-project-react">
             open-sourced on GitHub{" "}
           </a>
-          and{" "}
           <a href="https://graceful-daifuku-a3b2f5.netlify.app/">
-            deployed on Netlify
+            and deployed on Netlify
           </a>
         </footer>
       </div>
