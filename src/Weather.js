@@ -9,7 +9,7 @@ export default function Weather() {
           <div className="col-9">
             <input
               type="search"
-              placeholder="enter a city"
+              placeholder="Enter a city"
               className="form-control"
               autoFocus="on"
             />
@@ -32,17 +32,12 @@ export default function Weather() {
       </ul>
       <div className="row mt-3">
         <div className="col-6">
-          <div className="clearfix">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Partly Cloudy"
-              className="float-left"
-            />
-            <div>
-              <span className="temperature">6</span>
-              <span className="unit">°C</span>
-            </div>
-          </div>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Partly Cloudy"
+          />
+          <span className="temperature">6</span>
+          <span className="unit">°C</span>
         </div>
         <div className="col-6">
           <span></span>

@@ -30,13 +30,23 @@
 .Weather .temperature {
   font-weight: bold;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 500;
   color: rgb(33, 33, 33);
   line-height: 64px;
 }
 
 .Weather img {
   height: 64px;
+  width: 64px;
   margin-right: 10px;
-  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+  top: -23px;
 }
