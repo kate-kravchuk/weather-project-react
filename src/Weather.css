@@ -49,3 +49,7 @@
   position: relative;
   top: -23px;
 }
+
+Weather .temp {
+  margin: 10px auto;
+}
