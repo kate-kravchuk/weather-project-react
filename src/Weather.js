@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 import axios from "axios";
-import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -15,14 +16,8 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
-  }
-
-  function search() {
-    let apiKey = "11b44eedfad0402bf5d81a17d7823ce1";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleSubmit(event) {
@@ -31,6 +26,12 @@ export default function Weather(props) {
   }
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function search() {
+    let apiKey = "11b44eedfad0402bf5d81a17d7823ce1";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
