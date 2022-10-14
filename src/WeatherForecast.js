@@ -8,7 +8,7 @@ export default function WeatherForecast() {
       <div className="row">
         <div className="col">
           <div className="WeatherForecast-day">Thu</div>
-          <WeatherIcon code="01d" size={32} />
+          <WeatherIcon code="01d" size={22} />
           <div className="WeatherForecast-temperatures">
             <span className="WeatherForecast-temperatures-max">19°</span>/
             <span className="WeatherForecast-temperatures-min">10°</span>
