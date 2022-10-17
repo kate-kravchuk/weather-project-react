@@ -35,12 +35,6 @@
   line-height: 64px;
 }
 
-.Weather canvas {
-  height: 52px;
-  width: 52px;
-  margin-right: 10px;
-  position: relative;
-}
 .Weather .unit {
   color: rgb(33, 33, 33);
   font-size: 16px;
